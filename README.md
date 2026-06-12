@@ -148,3 +148,8 @@ Desenvolvido com ❤️ por Vitor
 ---
 
 **Desenvolvido em 2024** | RepasseCheck v1.0.0
+
+
+## Status
+- Deployment: Active (Vercel)
+- - Last updated: 2026-06-12
