@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>RepasseCheck - Análise de Conciliação</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+                      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+}
+        .navbar {
+                      background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+}
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #6366f1; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { text-decoration: none; color: #333; font-weight: 500; }
+        .hero {
+                      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+}
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .btn {
+                      display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #6366f1;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .features { padding: 4rem 0; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { background: #f9f9f9; padding: 2rem; border-radius: 12px; }
+                  .feature-card h3 { color: #6366f1; margin-bottom: 1rem; }
+        .footer { background: #333; color: white; text-align: center; padding: 2rem 0; margin-top: 4rem; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { gap: 1rem; }
+}
+    </style>
+      </head>
+      <body>
+          <nav class="navbar">
+              <div class="container">
+                  <div class="logo">✓ RepasseCheck</div>
+                  <div class="nav-links">
+                      <a href="#features">Features</a>
+                  </div>
+              </div>
+          </nav>
+
+          <section class="hero">
+              <div class="container">
+                  <h1>RepasseCheck</h1>
+                  <p>Sistema Inteligente de Análise de Conciliação</p>
+                  <p style="font-size: 1rem; margin-bottom: 2rem;">Detecte discrepâncias em seus recebimentos automaticamente</p>
+            <button class="btn" onclick="alert('🚀 Sistema em funcionamento! Entre em contato para mais informações.')">Entrar</button>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+              <div class="container">
+                  <h2>Por que usar RepasseCheck?</h2>
+                  <div class="features-grid">
+                      <div class="feature-card">
+                          <h3>🔍 Análise Profunda</h3>
+                    <p>Identifique inconsistências em suas transações em segundos.</p>
+                      </div>
+                      <div class="feature-card">
+                          <h3>📊 Dashboard em Tempo Real</h3>
+                          <p>Visualize todas as suas métricas em um só lugar com gráficos interativos.</p>
+                      </div>
+                      <div class="feature-card">
+                          <h3>🔗 Integração Multi-Plataforma</h3>
+                          <p>Conecte com Shopify, WooCommerce, Stripe, PayPal e muito mais.</p>
+                      </div>
+                      <div class="feature-card">
+                          <h3>⚡ Processamento Rápido</h3>
+                    <p>Processamos milhares de transações em segundos com tecnologia em nuvem.</p>
+                      </div>
+                      <div class="feature-card">
+                          <h3>📧 Relatórios Automáticos</h3>
+                          <p>Receba relatórios por email com as análises mais recentes.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Segurança Empresarial</h3>
+                    <p>Encriptação de dados e conformidade com LGPD e padrões internacionais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 0; background: #f9f9f9;">
+        <div class="container" style="text-align: center;">
+                  <h2 style="margin-bottom: 2rem;">Planos Simples e Transparentes</h2>
+                  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                      <div style="background: white; padding: 2rem; border-radius: 12px;">
+                          <h3 style="color: #6366f1; margin-bottom: 1rem;">Starter</h3>
+                          <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">R$ 99</div>
+                          <p style="color: #666; margin-bottom: 1rem;">/mês</p>
+                    <ul style="list-style: none; margin-bottom: 2rem; text-align: left; color: #666;">
+                        <li>✓ Até 100 transações/mês</li>
+                              <li>✓ Dashboard básico</li>
+                        <li>✓ Relatório mensal</li>
+                              <li>✓ Suporte por email</li>
+                    </ul>
+                    <button class="btn">Começar Agora</button>
+                </div>
+                <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; color: white; transform: scale(1.05);">
+                    <h3 style="margin-bottom: 1rem;">Professional</h3>
+                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">R$ 299</div>
+                          <p style="margin-bottom: 1rem;">/mês</p>
+                    <ul style="list-style: none; margin-bottom: 2rem; text-align: left;">
+                        <li>✓ Até 1.000 transações/mês</li>
+                              <li>✓ Dashboard completo</li>
+                              <li>✓ Relatórios semanais</li>
+                        <li>✓ Suporte prioritário</li>
+                          </ul>
+                          <button class="btn" style="color: #764ba2;">Começar Agora</button>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: 12px;">
+                    <h3 style="color: #6366f1; margin-bottom: 1rem;">Enterprise</h3>
+                    <div style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Customizado</div>
+                          <p style="color: #666; margin-bottom: 1rem;">Contato</p>
+                          <ul style="list-style: none; margin-bottom: 2rem; text-align: left; color: #666;">
+                              <li>✓ Transações ilimitadas</li>
+                        <li>✓ API completa</li>
+                        <li>✓ Relatórios em tempo real</li>
+                              <li>✓ Suporte dedicado 24/7</li>
+                          </ul>
+                          <button class="btn">Falar com Vendas</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+              <div class="container">
+                  <p>&copy; 2024 RepasseCheck. Todos os direitos reservados.</p>
+                  <p style="margin-top: 1rem; opacity: 0.8;">Email: dev.demonsa@gmail.com | WhatsApp: (94) 98777-1476</p>
+              </div>
+          </footer>
+      </body>
+      </html>
