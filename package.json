@@ -1,0 +1,10 @@
+{
+    "name": "repassecheck",
+    "version": "1.0.0",
+    "description": "Sistema Inteligente de Análise de Conciliação",
+    "scripts": {
+          "vercel-build": "echo 'Building static site...'"
+    },
+    "author": "RepasseCheck",
+    "license": "MIT"
+}
